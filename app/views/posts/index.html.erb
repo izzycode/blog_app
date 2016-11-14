@@ -1,0 +1,10 @@
+<h1>Posts</h1>
+<p></p>
+
+<hr>
+<h2 style="color:orange;"><%= @posts %></h2>
+
+<% @posts.each do |post| %>
+  <h1><%= post.title %></h1>
+  <p><%= post.body %></p>
+<% end %>
